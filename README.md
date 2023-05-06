@@ -1,5 +1,6 @@
 <h1>Squid client V1.0.1
 <h2>How to use squid client?
+<h3>Just click on batch file!!!
 <h2>System requirements
 <h3>Java above 17 required
 <h4>
