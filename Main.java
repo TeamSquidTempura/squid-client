@@ -1,9 +1,10 @@
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
+import java.util.Random;
 import java.util.Scanner;
 public class Main { //requirement
-    public static void main(String[] args) { //requirement
+    public static void main(String[] args) throws InterruptedException { //requirement
         Scanner ask_password = new Scanner(System.in); //input
         System.out.println("enter your password"); //output
         String password = ask_password.nextLine(); //set ask variable to normal variable
@@ -19,6 +20,7 @@ public class Main { //requirement
             System.out.println("1:Normal calculator (decimal version/int version)"); //user output
             System.out.println("2:Calculator for π calculation"); //user output
             System.out.println("3:Calculate is it odd or even number"); //user output
+            System.out.println("4:Generate random integers");//user output
             Scanner ask_mode = new Scanner(System.in); //set ask variable
             String mode = ask_mode.nextLine(); //set calc variable to ask variable
             if (mode.equals("1")) { //detect this condition
@@ -384,10 +386,30 @@ public class Main { //requirement
                     }
                 }
             }
+            if (mode.equals("4")){//if the mode was 4 run the program below
+                System.out.println("random number generator selected");//user output
+                Random rnd = new Random(); //random
+                System.out.println("enter the amount of random number you want to generate");//user output
+                Scanner ask_random_amount = new Scanner(System.in);//ask amount
+                int random_amount = ask_random_amount.nextInt();//set amount
+                System.out.println("please enter the maximum number");//user output
+                Scanner ask_random_maximum_int = new Scanner(System.in);//ask maximum int
+                int random_maximum_int = ask_random_maximum_int.nextInt();//set maximum int
+                System.out.println("    random numbers");//user output
+                System.out.println("----------------------");//user output
+                for (int i = 0; i < random_amount; i++ ){ //repeat
+                    int r = rnd.nextInt(random_maximum_int) + 1;//generate random
+                    System.out.println(r + " ");//user output
+                }
+                System.out.println();//user output
+                System.out.println("----------------------");//user output
+            }
         } else {
             System.out.println("incorrect password"); //return this if the password is incorrect
         }
     System.out.println("stopping..."); //output
+    System.out.println("closing in 10sec..."); //user output
+    Thread.sleep(10000); //wait 10 sec
     }
 } //stop
 
