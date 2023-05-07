@@ -5,6 +5,7 @@
 <h4>
 download from here: 
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+<h3>Above Windows 8 64 bit operation-system required
 <h2>Modes
 <h3>1: Normal calculator mode
 <h4>in this normal calculator mode you can choose two types between integer and decimal. but the decimal mode is using double variable for the calculation. so, it has less accurate than integer version. but if there are too many digits it will cause to the error or less accurate result. also in this normal calculator mode at the end of the calculation if you write true for the clipboard, you can copy the result(answer) in your clipboard.
