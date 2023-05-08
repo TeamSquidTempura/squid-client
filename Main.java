@@ -597,6 +597,9 @@ public class Main { //requirement
                     System.out.println("power must be lower than 10");
                 }
             }
+            if (mode.equals("6")){//if the mode matches 6 run the program
+                System.out.println("");
+            }
         } else {
             System.out.println("incorrect password"); //return this if the password is incorrect
         }
