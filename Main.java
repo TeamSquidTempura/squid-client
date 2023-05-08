@@ -21,6 +21,7 @@ public class Main { //requirement
             System.out.println("2:Calculator for π calculation"); //user output
             System.out.println("3:Calculate is it odd or even number"); //user output
             System.out.println("4:Generate random integers");//user output
+            System.out.println("5:Power calculator");//user output
             Scanner ask_mode = new Scanner(System.in); //set ask variable
             String mode = ask_mode.nextLine(); //set calc variable to ask variable
             if (mode.equals("1")) { //detect this condition
@@ -403,6 +404,198 @@ public class Main { //requirement
                 }
                 System.out.println();//user output
                 System.out.println("----------------------");//user output
+            }
+            if (mode.equals("5")){//if the mode was power calculation mode run the program below
+                System.out.println("power calculation mode selected");//user output
+            System.out.println("hey!"+user+" please enter the integer you want to power");//user output
+                Scanner ask_power_calculator_int = new Scanner(System.in);//user input
+                int power_calculator_int = ask_power_calculator_int.nextInt();//set variable
+                System.out.println(power_calculator_int+" powered by what? (maximum 10)");//user output
+                System.out.println("please enter here");//user output
+                Scanner ask_power_calculator_power = new Scanner(System.in);//get user input
+                int power_calculator_power = ask_power_calculator_power.nextInt();//set variable
+                if (power_calculator_power == 1){//get the power
+                    System.out.println("result:"+power_calculator_int);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_int);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean){ //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 2) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 3) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 4) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int + power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 5) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 6) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 7) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 8) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 9) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power == 10) {//get the power
+                    int power_calculator_result = power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int * power_calculator_int; //calculate
+                    System.out.println("result:" + power_calculator_result);//user output
+                    System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                    Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                    boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                    if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                        String clipboard_copy;
+                        clipboard_copy = Integer.toString(power_calculator_result);
+                        StringSelection stringSelection = new StringSelection(clipboard_copy); //select sting
+                        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                        clipboard.setContents(stringSelection, null); //load clipboard
+                        System.out.println("copied to clipboard");//user output
+                    }
+                    if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                        System.out.println("skipped");//user output
+                    }
+                }
+                if (power_calculator_power > 10){
+                    System.out.println("power must be lower than 10");
+                }
             }
         } else {
             System.out.println("incorrect password"); //return this if the password is incorrect

@@ -15,7 +15,10 @@ https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 <h4>in this odd or even mode you enter one integer number, and it automatically checks is that number odd or even. please don't use too high int for this because, otherwise it will end by the error. this is very accurate.
 <h3>4:random int generator mode
 <h4>in this random int generator mode it generates specific amount of random int by specifying the range
+<h3>5:Power calculator
+<h4>in this power calculator mode it's possible to calculate power of the int you specified. maximum power num is 10
 <h2>Update logs
+<h3>V1.0.3: this version released at 2023/5/08. power calculator added
 <h3>V1.0.2: this version released at 2023/5/07. random int generator added
 <h3>V1.0.1: this version released at 2023/5/06. odd or even and π PI calculator mode added.
 <h3>V1.0.0: this version released at 2023/5/05. Dev Normal calculator mode added.
