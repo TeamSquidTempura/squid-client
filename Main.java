@@ -1,8 +1,9 @@
-import java.awt.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
-import java.util.Random;
-import java.util.Scanner;
+import java.awt.*;//import java awt
+import java.awt.datatransfer.Clipboard; //import clipboard
+import java.awt.datatransfer.StringSelection; //import string selection
+import java.util.Random; //import random
+import java.util.Scanner;//import scanner
+
 public class Main { //requirement
     public static void main(String[] args) throws InterruptedException { //requirement
         Scanner ask_password = new Scanner(System.in); //input
@@ -22,6 +23,7 @@ public class Main { //requirement
             System.out.println("3:Calculate is it odd or even number"); //user output
             System.out.println("4:Generate random integers");//user output
             System.out.println("5:Power calculator");//user output
+            System.out.println("6:Convert decimals to percentage");
             Scanner ask_mode = new Scanner(System.in); //set ask variable
             String mode = ask_mode.nextLine(); //set calc variable to ask variable
             if (mode.equals("1")) { //detect this condition
@@ -598,14 +600,33 @@ public class Main { //requirement
                 }
             }
             if (mode.equals("6")){//if the mode matches 6 run the program
-                System.out.println("");
+                System.out.println("convert decimals to percentage");
+                System.out.println("please enter the decimals you want to convert");
+                Scanner ask_decimals_to_percentage_decimals = new Scanner(System.in);
+                double decimals_to_percentage_decimals = ask_decimals_to_percentage_decimals.nextDouble();
+                double decimals_to_percentage_result = decimals_to_percentage_decimals*100;
+                System.out.println("result:"+decimals_to_percentage_result+"%");
+                System.out.println("do you want to copy the result on clip board? true/false"); //copy
+                Scanner ask_clipboard_copy = new Scanner(System.in);//ask for does user copy to clipboard
+                boolean clipboard_copy_boolean = ask_clipboard_copy.nextBoolean();//set the variable to the answer above
+                if (clipboard_copy_boolean) {//condition of if the clipboard was true
+                    String clipboard_copy;
+                    clipboard_copy = Double.toString(decimals_to_percentage_result);
+                    StringSelection stringSelection = new StringSelection(clipboard_copy+"%"); //select sting
+                    Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(); //tool kit
+                    clipboard.setContents(stringSelection, null); //load clipboard
+                    System.out.println("copied to clipboard");//user output
+                }
+                if (!clipboard_copy_boolean) { //the condition of if the clipboard was false
+                    System.out.println("skipped");//user output
+                }
             }
         } else {
             System.out.println("incorrect password"); //return this if the password is incorrect
         }
-    System.out.println("stopping..."); //output
-    System.out.println("closing in 10sec..."); //user output
-    Thread.sleep(10000); //wait 10 sec
-    }
+        System.out.println("stopping..."); //output
+        System.out.println("closing in 10sec..."); //user output
+        Thread.sleep(10000); //wait 10 sec
+        }
 } //stop
 

@@ -17,7 +17,10 @@ https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 <h4>in this random int generator mode it generates specific amount of random int by specifying the range
 <h3>5:Power calculator
 <h4>in this power calculator mode it's possible to calculate power of the int you specified. maximum power num is 10
+<h3>6:Decimals to percentage converter
+<h4>in these decimals to percentage converter it converts the decimals to percentage. at the end of the conversion you can copy the result.
 <h2>Update logs
+<h3>V1.0.4: this version released at 2023/5/10. decimals to percentage converter added.
 <h3>V1.0.3: this version released at 2023/5/08. power calculator added
 <h3>V1.0.2: this version released at 2023/5/07. random int generator added
 <h3>V1.0.1: this version released at 2023/5/06. odd or even and π PI calculator mode added.
